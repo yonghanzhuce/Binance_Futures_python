@@ -7,6 +7,9 @@ from binance_f.exception.binanceapiexception import BinanceApiException
 
 from binance_f.base.printobject import *
 
+g_api_key = "yTs6XP8Z8DAA1qWfXv3HOwFFEQ3C2A4KEcMpRECsh66KEdkdpBydztifOjH2kGi3"
+g_secret_key = "klO3fDwZpApgEU67rapOSHOqbSWrEVZ60WkVeAF4vvk9RQAKOLUHquAKODJtqhNE"
+
 # Start user data stream
 request_client = RequestClient(api_key=g_api_key, secret_key=g_secret_key)
 listen_key = request_client.start_user_data_stream()
